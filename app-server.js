@@ -9,7 +9,7 @@ app.use((req, res, next) => {
 })
 app.use(express.static('public'))
 
-
+// what does this code do how do i serve this for dev mode?
 app.get('*', (req, res) => {
 	res.sendFile(path.resolve(path.join(__dirname, 'public', 'index.html')))
 })
